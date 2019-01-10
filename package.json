@@ -1,21 +1,19 @@
 {
-  "name": "cra-monorepo-example",
-  "version": "0.0.1",
+  "name": "esp-monorepo-tests",
+  "version": "0.1.0",
   "main": "index.js",
-  "repository": "",
+  "repository": "https://github.com/Espressive/esp-monorepo-tests.git",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "clean": "lerna clean -f --yes && rm -rf node_modules",
-    "reset": "yarn run clean && yarn",
-    "app1": "cd apps/cra-app1 && yarn start",
-    "app2": "cd apps/cra-app2 && yarn start",
-    "app3": "cd apps/cra-app3 && yarn start"
+    "app1": "yarn --cwd apps/cra-app1 start",
+    "app2": "yarn --cwd apps/cra-app2 start",
+    "app3": "yarn --cwd apps/cra-app3 start",
+    "clean": "rm -rf node_modules",
+    "reset": "yarn run clean && yarn"
   },
   "dependencies": {},
-  "devDependencies": {
-    "lerna": "^2.6.0"
-  },
+  "devDependencies": {},
   "workspaces": [
     "apps/*",
     "comps/*",
