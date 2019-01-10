@@ -1,4 +1,18 @@
-## Example monorepo
+## Espressive Monorepo Tests
+
+Building upon the [initial monorepo examples](https://github.com/bradfordlemley/cra-monorepo-examples), this repo is updated with [specific use cases](#use-cases) for Espressive's monorepo environment.
+
+### Links
+
+- [Offical Yarn PNP Sample App](https://github.com/yarnpkg/pnp-sample-app)
+- [Bradford's Original Monorepo Examples](https://github.com/bradfordlemley/cra-monorepo-examples)
+
+### Use Cases
+
+More needed here...
+
+----------
+
 A monorepo where apps share components might look like this:
 ```
 monorepo
