@@ -6,12 +6,6 @@ import add from 'lodash/add';
 
 import addInternal from './comp1_internal';
 
-const addInt = (a, b) => a + b;
-
-
-const x = 1;
-const y = 0;
-
 class Add extends Component {
   render() {
     const {a, b} = this.props;
