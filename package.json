@@ -9,8 +9,9 @@
     "app1": "yarn --cwd apps/cra-app1 start",
     "app2": "yarn --cwd apps/cra-app2 start",
     "app3": "yarn --cwd apps/cra-app3 start",
-    "clean": "rm -rf node_modules",
-    "reset": "yarn run clean && yarn"
+    "clean:modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "clean:files": "rm -rf .pnp* yarn.lock package-lock.json",
+    "reset": "yarn run clean:modules && yarn run clean:files"
   },
   "dependencies": {},
   "devDependencies": {},
