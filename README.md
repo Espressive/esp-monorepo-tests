@@ -1,6 +1,12 @@
-## Espressive Monorepo Tests
+# Espressive Monorepo Tests
 
 Building upon the [initial monorepo examples](https://github.com/bradfordlemley/cra-monorepo-examples), this repo is updated with [specific use cases](#use-cases) for Espressive's monorepo environment.
+
+### To Do
+
+- [x] Clean up anything unused based on our needs
+- [ ] Update README relative to our project
+- [ ] 
 
 ### Links
 
