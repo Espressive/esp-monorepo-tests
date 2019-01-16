@@ -10,9 +10,9 @@ Building upon the [initial monorepo examples](https://github.com/bradfordlemley/
 
 ### What Are These Apps?
 
-- CRA1: Almost completely OOTB from CRA with no imports. This is our **CONTROL**
-- CRA2: CONTROL with a single monorepo package import
-- CRA3: CONTROL with a single monorepo package import that itself has another monorepot import
+- cra1: Almost completely OOTB from CRA with no imports. This is our **CONTROL**
+- cra2: CONTROL with a single monorepo package import
+- cra3: CONTROL with a single monorepo package import that itself has another monorepot import
 
 ### Links
 
