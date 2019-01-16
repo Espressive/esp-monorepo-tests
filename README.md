@@ -8,6 +8,12 @@ Building upon the [initial monorepo examples](https://github.com/bradfordlemley/
 - [ ] Update README relative to our project
 - [ ] 
 
+### What Are These Apps?
+
+- CRA1: Almost completely OOTB from CRA with no imports. This is our **CONTROL**
+- CRA2: CONTROL with a single monorepo package import
+- CRA3: CONTROL with a single monorepo package import that itself has another monorepot import
+
 ### Links
 
 - [Offical Yarn PNP Sample App](https://github.com/yarnpkg/pnp-sample-app)
