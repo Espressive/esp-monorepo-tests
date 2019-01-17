@@ -15,7 +15,9 @@
     "clean:files": "rm -rf .pnp* yarn.lock package-lock.json",
     "reset": "yarn run clean:modules && yarn run clean:files"
   },
-  "dependencies": {},
+  "dependencies": {
+    "esm": "^3.1.0"
+  },
   "devDependencies": {},
   "workspaces": [
     "apps/*",
