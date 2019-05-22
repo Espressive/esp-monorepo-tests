@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
 import pkg from '../package.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <header className={styles.Header}>
+        <img src={logo} className={styles.Logo} alt="logo" />
         <h1>{pkg.name}</h1>
       </header>
     </div>
