@@ -5,6 +5,9 @@
   "repository": "https://github.com/Espressive/esp-monorepo-tests.git",
   "license": "MIT",
   "private": true,
+  "installConfig": {
+    "pnp": false
+  },
   "scripts": {
     "cra1": "yarn --cwd apps/cra1 start",
     "cra2": "yarn --cwd apps/cra2 start",
