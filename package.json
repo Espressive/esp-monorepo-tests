@@ -12,12 +12,9 @@
     "cra1": "yarn --cwd apps/cra1 start",
     "cra2": "yarn --cwd apps/cra2 start",
     "cra3": "yarn --cwd apps/cra3 start",
-        
-    "cra1:test": "yarn --cwd apps/cra1 test",
-    "cra2:test": "yarn --cwd apps/cra2 test",
-    "cra3:test": "yarn --cwd apps/cra3 test",
-    
+            
     "build-all" : "yarn workspaces run build",
+    "test-all" : "yarn workspaces run test --watchAll=false",
     
     "clean:modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "clean:files": "rm -rf .pnp* yarn.lock package-lock.json */*/build",
