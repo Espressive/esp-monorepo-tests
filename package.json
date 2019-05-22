@@ -8,6 +8,17 @@
   "installConfig": {
     "pnp": false
   },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "react-scripts": "3.0.1"
+  },
+  "workspaces": [
+    "apps/*",
+    "_comps/*"
+  ],
   "scripts": {
     "cra1": "yarn --cwd apps/cra1 start",
     "cra2": "yarn --cwd apps/cra2 start",
@@ -19,10 +30,5 @@
     "clean:modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "clean:files": "rm -rf .pnp* yarn.lock package-lock.json */*/build",
     "reset": "yarn run clean:modules && yarn run clean:files"
-  },
-  "devDependencies": {},
-  "workspaces": [
-    "apps/*",
-    "_comps/*"
-  ]
+  }
 }
