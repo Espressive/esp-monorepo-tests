@@ -23,6 +23,6 @@
   "devDependencies": {},
   "workspaces": [
     "apps/*",
-    "comps/*"
+    "_comps/*"
   ]
 }
