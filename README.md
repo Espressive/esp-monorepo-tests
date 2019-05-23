@@ -20,7 +20,29 @@ There are a few substantial problems that the above issues present:
 
 This repo is a POC to address the above problems in a few different ways:
 
-- [x] For CRA applications, define any of the common modules as peerDependencies and move them to the root so yarn does not have to work as hard to traverse the dependency tree. This also hopefully makes updating and keeping dependencies the same across all of our micro applications. We still have the option of declaring a different dependency inside a micro application if we need to and remove the peerDependencies declaration from that specific package.json file.
+#### Move Core CRA Dependencies To peerDependencies
+For CRA applications, define any of the common modules as peerDependencies and move them to the root so yarn does not have to work as hard to traverse the dependency tree. This also hopefully makes updating and keeping dependencies the same across all of our micro applications. We still have the option of declaring a different dependency inside a micro application if we need to and remove the peerDependencies declaration from that specific package.json file.
+
+Initial CRA Dependencies:
+```
+"dependencies": {
+  "react": "^16.8.6",
+  "react-dom": "^16.8.6"
+},
+"devDependencies": {
+  "react-scripts": "3.0.1"
+},
+```
+The above dependencies *MUST* be declared correctly in the root package.json file.
+
+Updated CRA Dependencies:
+```
+"peerDependencies": {
+  "react-dom": "^16.8.6",
+  "react-scripts": "3.0.1",
+  "react": "^16.8.6"
+},
+```
 
 - [ ] Rely less on custom tooling (scripts or make) so we can utilize more standardized scripts available in all workspace packages, which may allow us to run some of our builds in parallel. Instead utilize `yarn workspaces run <script>` or [wsrun](https://github.com/hfour/wsrun#readme) in Jenkins and local dev environments.
 
