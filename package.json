@@ -16,8 +16,8 @@
     "react-scripts": "3.0.1"
   },
   "workspaces": [
-    "apps/*",
-    "_comps/*"
+    "_comps/*",
+    "apps/*"
   ],
   "scripts": {
     "cra1": "yarn --cwd apps/cra1 start",
