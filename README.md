@@ -20,7 +20,7 @@ There are a few substantial problems that the above issues present:
 
 This repo is a POC to address the above problems in a few different ways:
 
-- [ ] For CRA applications, define any of the common modules as peerDependencies and move them to the root so yarn does not have to work as hard to traverse the dependency tree. This also hopefully makes updating and keeping dependencies the same across all of our micro applications. We still have the option of declaring a different dependency inside a micro application if we need to and remove the peerDependencies declaration from that specific package.json file.
+- [x] For CRA applications, define any of the common modules as peerDependencies and move them to the root so yarn does not have to work as hard to traverse the dependency tree. This also hopefully makes updating and keeping dependencies the same across all of our micro applications. We still have the option of declaring a different dependency inside a micro application if we need to and remove the peerDependencies declaration from that specific package.json file.
 - [ ] 
 
 
